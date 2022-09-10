@@ -1,0 +1,81 @@
+/* This will remove any default paddings/margins that elements may come with
+   so that we have a clean slate to work with.
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* I will be using a rem to size things on the page.
+   This will override the default font size of the browser 
+   to be 10px instead of 16px.
+   So in this case 1rem = 10 px going foward.
+*/
+html {
+  font: 62.5%;
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #0a3d62;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ---------------------- */
+/* Styling header */
+/* ---------------------- */
+.header {
+  background-color: #e6f5f4;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  height: 9.6rem;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4.8rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #072b45;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #068a83;
+}
+
+/* ---------------------- */
+/* Styling hero secttion  */
+/* ---------------------- */
+
+.section-hero {
+  background-color: #e6f5f4;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  display: grid;
+  max-width: 130rem;
+  margin: 0 auto;
+  /* might change this padding to 3.2 though i do like how it looks at 4.8! */
+  padding: 0 4.8rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-txt-box {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.hero-img {
+  width: 100%;
+}

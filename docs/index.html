@@ -2,32 +2,62 @@
 <html>
   <head>
     <title>Project 1: Milestone one</title>
+    <link rel="stylesheet" href="assests\css\general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header class="section-basic-info">
-      <img
-        src="assests/images/pic-of-shark.jpg"
-        alt="Picture of standing shark"
-        width="25%"
-      />
-      <h1>Michael Lopez</h1>
-      <p>Major: <strong>Computer Science</strong></p>
-
+    <header class="header">
       <nav class="main-nav">
-        <ul>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work-experience">Work Experience</a></li>
-          <li><a href="#programming-skills">Programming skills</a></li>
-          <li><a href="#hobbies-interests">Hobbies/Interests</a></li>
-          <li><a href="#favorite-misc">Favorite Section</a></li>
-          <li><a href="#favorite-sites">Favorite Websites</a></li>
-          <li><a href="#projects">Projects</a></li>
+        <ul class="main-nav-list">
+          <li><a href="#education" class="main-nav-link">Education</a></li>
+          <li>
+            <a href="#work-experience" class="main-nav-link">Work Experience</a>
+          </li>
+          <li>
+            <a href="#programming-skills" class="main-nav-link"
+              >Programming skills</a
+            >
+          </li>
+          <li>
+            <a href="#hobbies-interests" class="main-nav-link"
+              >Hobbies/Interests</a
+            >
+          </li>
+          <li>
+            <a href="#favorite-misc" class="main-nav-link">Favorite Section</a>
+          </li>
+          <li>
+            <a href="#favorite-sites" class="main-nav-link"
+              >Favorite Websites</a
+            >
+          </li>
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-txt-box">
+            <h1>Hello. My name is Michael Lopez</h1>
+          </div>
+          <div class="hero-img">
+            <img
+              src="assests/images/pic-of-shark.jpg"
+              alt="Picture of standing shark"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- migh have this be all in one section. maybe called about me section. -->
       <section class="section-edu-sum" id="education">
         <h2>Education</h2>
         <p>I am currently a student at St.John's University</p>
@@ -60,6 +90,8 @@
           discover new genres of music/artists to listen to.
         </p>
       </section>
+
+      <!--  -->
 
       <section class="section-favorite" id="favorite-misc">
         <h2>Fovorite Section:</h2>
