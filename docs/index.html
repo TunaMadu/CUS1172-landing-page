@@ -49,10 +49,12 @@
             <h1 class="heading-primary">Hello. I'm Michael</h1>
           </div>
           <div class="hero-img">
-            <img
-              src="assests/images/pic-of-shark.jpg"
-              alt="Picture of standing shark"
-            />
+            <picture>
+              <img
+                src="assests/images/pic-of-shark.jpg"
+                alt="Picture of standing shark"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -199,56 +201,77 @@
         </div>
       </section>
 
-      <!-- this table will have some changes. mainly want to keep the header empty. not sure if im allowed to do this semantically since it will be a table with one title header with two coloumns which might be misleading. though will see.we may opt to leave the headers empty or make the headers bold. will see how this looks later -->
-
       <section class="section-favorite-websites" id="favorite-sites">
-        <h2 class="heading-secondary">Favorite Websites</h2>
-        <table class="website-resource-table">
-          <tr>
-            <th>Website</th>
-            <th>Description</th>
-          </tr>
+        <div class="container">
+          <h2 class="heading-secondary center-text">Commonly used resources</h2>
+        </div>
 
-          <tr>
-            <td>
-              <a href="https://developer.mozilla.org/en-US/" target="_blank"
-                >Mozilla Website</a
-              >
-            </td>
-            <td>
-              Handy website when it comes to all things web development. From
-              tutorials to references to examples, this is the one-stop shop for
-              all things web related!
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://onepagelove.com/" target="_blank"
-                >One Page Love</a
-              >
-            </td>
-            <td>
-              A helpful website to see what developers are doing on the web to
-              take in inspiration for your next project.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://maketintsandshades.com/" target="_blank"
-                >Tint & Shade Generator</a
-              >
-            </td>
-            <td>
-              A helpful site for when you have a color and would like to know
-              it's tint and shade variants, as well as their hex values.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://monkeytype.com/" target="_blank">Monkeytype</a>
-            </td>
-            <td>A fun website to see how fast you can type!</td>
-          </tr>
+        <table class="website-resource-table container">
+          <thead>
+            <tr class="table-row">
+              <th class="heading-tertiary">Website</th>
+              <th class="heading-tertiary">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-row">
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/"
+                  target="_blank"
+                  class="table-link"
+                  >Mozilla Website</a
+                >
+              </td>
+              <td class="table-description">
+                Handy website when it comes to all things web development. From
+                tutorials to references to examples, this is the one-stop shop
+                for all things web related!
+              </td>
+            </tr>
+
+            <tr class="table-row">
+              <td>
+                <a
+                  href="https://onepagelove.com/"
+                  target="_blank"
+                  class="table-link"
+                  >One Page Love</a
+                >
+              </td>
+              <td class="table-description">
+                A helpful website to see what developers are doing on the web to
+                take in inspiration for your next project.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>
+                <a
+                  href="https://maketintsandshades.com/"
+                  target="_blank"
+                  class="table-link"
+                  >Tint & Shade Generator</a
+                >
+              </td>
+              <td class="table-description">
+                A helpful site for when you have a color and would like to know
+                it's tint and shade variants, as well as their hex values.
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td>
+                <a
+                  href="https://monkeytype.com/"
+                  target="_blank"
+                  class="table-link"
+                  >Monkeytype</a
+                >
+              </td>
+              <td class="table-description">
+                A fun website to see how fast you can type!
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
       <section class="section-projects" id="projects">
