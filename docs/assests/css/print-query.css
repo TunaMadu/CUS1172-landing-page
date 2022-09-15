@@ -1,4 +1,26 @@
 @media print {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6rem;
+  }
+  .hero-txt-box,
+  .hero-img {
+    text-align: center;
+  }
+  .hero-img picture img {
+    width: 15%;
+  }
+  .section-about-me {
+    padding: 0 8rem;
+  }
+  .section-projects {
+    padding: 0 8rem;
+  }
+
   .header {
     display: none;
   }
