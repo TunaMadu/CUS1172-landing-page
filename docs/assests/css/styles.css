@@ -69,12 +69,17 @@
   display: flex;
   list-style: none;
   flex-direction: column;
+  max-width: 50rem;
   gap: 2rem;
 }
 .programming-skills-atrbute {
-  font-size: 1.8rem;
   display: flex;
+  text-align: center;
+  padding: 2rem;
+  align-items: center;
+  font-size: 1.8rem;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 /* ---------------------- */

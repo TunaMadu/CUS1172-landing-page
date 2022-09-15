@@ -1,0 +1,24 @@
+@media screen and (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6rem;
+  }
+  .hero-txt-box,
+  .hero-img {
+    text-align: center;
+  }
+  .hero-img picture img {
+    width: 55%;
+  }
+  .gallery {
+    /* grid-template-columns: 1fr;
+    grid-auto-rows: auto; */
+  }
+}
