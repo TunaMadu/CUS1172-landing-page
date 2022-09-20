@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assests/css/bootstrap-assets/bootstrap.css" />
     <title>Project 1: Milestone one</title>
     <link rel="stylesheet" href="assests/css/general.css" />
     <link rel="stylesheet" href="assests/css/styles.css" />
@@ -19,16 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      /* This will remove any default paddings/margins that elements may come with
-   so that we have a clean slate to work with.
-*/
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-    </style>
   </head>
 
   <body>
@@ -80,14 +71,16 @@
       </section>
 
       <section class="section-about-me">
-        <div class="container">
+        <div class="my-version-of-container">
           <h2 class="heading-secondary">About me</h2>
         </div>
 
-        <div class="container grid grid--1-cols grid--no-mrgn-btm">
-          <div class="section-edu-sum margin-btm-smll card" id="education">
+        <div
+          class="my-version-of-container grid grid--1-cols grid--no-mrgn-btm"
+        >
+          <div class="section-edu-sum margin-btm-smll" id="education">
             <h3 class="heading-tertiary">Education</h3>
-            <p class="text-box container">
+            <p class="my-txtbx my-version-of-container">
               I am currently a student at St.John's University
             </p>
           </div>
@@ -97,7 +90,7 @@
             id="work-experience"
           >
             <h3 class="heading-tertiary">Work experience</h3>
-            <p class="text-box container">
+            <p class="my-txtbx my-version-of-container">
               Currently do not have any work/internship experience
             </p>
           </div>
@@ -107,7 +100,9 @@
             id="programming-skills"
           >
             <h3 class="heading-tertiary">Program language knowledge</h3>
-            <ul class="programming-skills-list text-box container">
+            <ul
+              class="programming-skills-list my-txtbx my-version-of-container"
+            >
               <li class="programming-skills-atrbute">
                 Java
                 <span>
@@ -145,7 +140,7 @@
             id="hobbies-interests"
           >
             <h3 class="heading-tertiary">Hobbies and Interests</h3>
-            <p class="text-box container">
+            <p class="my-txtbx my-version-of-container">
               I'm a huge fan of mechanical keyboards. I'm also into powerlifting
               and discovering new music.
             </p>
@@ -154,18 +149,18 @@
       </section>
 
       <section class="section-projects" id="projects">
-        <div class="container">
+        <div class="my-version-of-container">
           <h2 class="heading-secondary">Projects</h2>
-          <p class="project-description text-box"><em> Soon.</em></p>
+          <p class="project-description my-txtbx"><em> Soon.</em></p>
         </div>
       </section>
       <section class="section-favorite" id="favorite-misc">
-        <div class="container">
+        <div class="my-version-of-container">
           <h2 class="heading-secondary center-text">
             A little bit more about me!
           </h2>
 
-          <div class="gallery container">
+          <div class="gallery my-version-of-container">
             <figure class="gallery-item" id="song-item-1">
               <iframe
                 style="border-radius: 12px"
@@ -228,11 +223,11 @@
       </section>
 
       <section class="section-favorite-websites" id="favorite-sites">
-        <div class="container">
+        <div class="my-version-of-container">
           <h2 class="heading-secondary center-text">Commonly used resources</h2>
         </div>
 
-        <table class="website-resource-table container">
+        <table class="website-resource-table my-version-of-container">
           <thead>
             <tr class="table-row">
               <th class="heading-tertiary">Website</th>
@@ -299,6 +294,44 @@
             </tr>
           </tbody>
         </table>
+      </section>
+      <section class="section-form">
+        <div class="container container-form">
+          <div class="row form-content">
+            <div class="col form-txt-bx">
+              <h2 class="heading-secondary">Contact me!</h2>
+
+              <form class = "form-contact-me"action>
+
+                <div>
+
+                  <label for="full-name"> Full Name</label>
+
+                  <input id="full-name" type="text" placeholder="John adams" name="full-name" required>
+
+                </div>
+
+                <div>
+
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" placeholder="me@example.com" name="email" required>
+
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit</button>
+
+
+            </div>
+            <div class="col form-img-bx">
+              <picture>
+                <img
+                  src="assests/images/pic-of-shark.jpg"
+                  alt="Picture of standing shark"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>

@@ -1,3 +1,12 @@
+/* This will remove any default paddings/margins that elements may come with
+   so that we have a clean slate to work with.
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* I will be using a rem to size things on the page.
    This will override the default font size of the browser 
    to be 10px instead of 16px.
@@ -17,7 +26,7 @@ body {
 /* reusable styles*/
 /* ---------------------- */
 
-.container {
+.my-version-of-container {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
@@ -76,7 +85,7 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.text-box {
+.my-txtbx {
   font-size: 1.8rem;
   line-height: 1.8;
 }
