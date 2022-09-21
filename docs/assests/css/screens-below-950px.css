@@ -2,9 +2,7 @@
   html {
     font-size: 50%;
   }
-  .header {
-    display: none;
-  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
