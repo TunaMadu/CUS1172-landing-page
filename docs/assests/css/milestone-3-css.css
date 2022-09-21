@@ -1,32 +1,221 @@
+/* Generic styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-/* I will be using a rem to size things on the page.
-    This will override the default font size of the browser 
-    to be 10px instead of 16px.
-    So in this case 1rem = 10 px going foward.
- */
 html {
   font-size: 62.5%;
 }
 body {
   line-height: 1;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #0a3d62;
   font-family: "Ubuntu", sans-serif;
 }
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
 
-/*  */
-/* Header */
-/*  */
+.heading-primary {
+  font-size: 5rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+/* ********** */
+/* header */
+/* ********** */
 .header {
+  background-color: #e6f5f4;
+  padding-bottom: 8.5rem;
+}
+
+/* ********** */
+/* section hero */
+/* ********** */
+.section-hero {
+  background-color: #e6f5f4;
+}
+
+/* ********** */
+/* about me */
+/* ********** */
+
+.section-about-me {
   padding: 9.6rem 0;
 }
 
-/* section hero */
-.section-hero {
+.section-about-me .row {
+  gap: 1.2rem;
+  margin-bottom: 25rem;
+}
+.section-about-me .row {
+  gap: 1.2rem;
+  margin-bottom: 25rem;
+}
+.row.about-me-row {
+  align-items: center;
+  text-align: center;
+}
+
+.about-section-tittle {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.about-me-txt {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.about-me-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.3rem;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  */
+/* section favorite */
+/*  */
+
+.section-favorite {
   padding: 9.6rem 0;
+  background-color: #e6f5f4;
+}
+/*  */
+/* favorite websites */
+/*  */
+.section-favorite-websites {
+  padding: 9.6rem 0;
+}
+.section-favorite-websites .table {
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  overflow: hidden;
+}
+.table-row th {
+  text-align: center;
+}
+.table-row th,
+.table-row td {
+  padding: 2rem;
+  margin-bottom: 2.1rem;
+}
+
+.table-row td {
+  text-align: center;
+}
+
+.table-link:link,
+.table-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #072b45;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.table-link:hover,
+.table-link:active {
+  color: #068a83;
+}
+.table-striped {
+  background-color: #fdfefe;
+}
+
+/* ********** */
+/* form section */
+/* ********** */
+.section-form {
+  padding: 9.6rem 0;
+}
+.container {
+  margin: 0 auto;
+}
+.form-content .col {
+  padding: 0;
+}
+.container-form {
+  border-radius: 1%;
+}
+.form-content .form-txt-bx {
+  padding: 4.8rem 6rem 6rem 6rem;
+  background-color: #e6f5f4;
+}
+
+.form-txt-bx .heading-secondary {
+  color: #072b45;
+  font-size: 6.3rem;
+
+  margin-bottom: 3.6rem;
+}
+
+.form-contact-me {
+  display: grid;
+  row-gap: 3.2rem;
+}
+
+.form-contact-me label {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+.form-contact-me input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 10px;
+  background-color: #fdfefe;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  margin-bottom: 1.3rem;
+}
+
+.form-contact-me input:focus {
+  outline: none;
+  box-shadow: 0 0 1px 3px rgba(7, 43, 69, 0.2);
+}
+
+.btn-primary {
+  border: none;
+  padding: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  background-color: #072b45;
+  color: #e6f5f4;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: rgba(7, 43, 69, 0.9);
+  box-shadow: 0 1px 5px rgb(7 43 69 / 15%);
+  color: #e6f5f4;
 }
