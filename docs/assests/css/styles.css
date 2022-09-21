@@ -273,3 +273,10 @@ tbody .table-row:hover {
   background-color: #072b45;
   color: #e6f5f4;
 }
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color: rgba(7, 43, 69, 0.9);
+  box-shadow: 0 1px 5px rgb(7 43 69 / 15%);
+  color: #e6f5f4;
+}
