@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* I will be using a rem to size things on the page.
+    This will override the default font size of the browser 
+    to be 10px instead of 16px.
+    So in this case 1rem = 10 px going foward.
+ */
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #0a3d62;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*  */
+/* Header */
+/*  */
+.header {
+  padding: 9.6rem 0;
+}
+
+/* section hero */
+.section-hero {
+  padding: 9.6rem 0;
+}
